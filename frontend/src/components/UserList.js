@@ -8,7 +8,7 @@ function UserList() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('/api/user');
+        const response = await axios.get('/api/users');
         setUsers(response.data);
       } catch (err) {
         setError('❌ Lỗi khi tải danh sách user');

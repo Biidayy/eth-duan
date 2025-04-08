@@ -9,7 +9,7 @@ function RegisterUser() {
 
   const handleRegister = async () => {
     try {
-      const response = await axios.post('/api/user/create', {
+      const response = await axios.post('/api/users/create', {
         name,
         walletAddress,
         privateKey,

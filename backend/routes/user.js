@@ -9,7 +9,7 @@ router.post('/create', userController.createUser);
 // Lấy danh sách user
 router.get('/', userController.getAllUsers);
 
-// Xóa user
+// Xoá user
 router.delete('/:id', userController.deleteUser);
 
 // Chuyển ETH

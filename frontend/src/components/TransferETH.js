@@ -9,7 +9,7 @@ function TransferETH() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/user') // 
+    axios.get('http://localhost:5000/api/user') // Đổi cổng và đường dẫn đúng
       .then(res => setUsers(res.data))
       .catch(err => console.error(err));
   }, []);
@@ -20,7 +20,7 @@ function TransferETH() {
       return;
     }
 
-    axios.post('http://localhost:5000/api/user/transfer', { 
+    axios.post('http://localhost:5000/api/users/transfer', { 
       fromAddress: sender,
       toAddress: receiver,
       amount
